@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            padding: 75px;
+            background-color: skyblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- 盒子尺寸 = 内容尺寸 + border尺寸 + 内边距尺寸 -->
+    <!-- 结论：给盒子计border/padding 会撑大盒子大小 -->
+    <!-- 解决办法：1.手动减法，减去border / padding 尺寸 
+                2.内减模式：box-sizing:border-box
+    -->
+    <div>test</div>
+</body>
+</html>

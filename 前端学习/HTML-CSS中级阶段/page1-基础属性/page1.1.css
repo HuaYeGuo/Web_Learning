@@ -1,0 +1,70 @@
+#size{
+    /* 经验：google chrome浏览器默认字体大小为16px */
+    /* font-size属性必须带单位，否则属性无效 */
+    font-size: 30px;
+}
+#weight1{
+    /* 不加粗 font-weight = "normal" 消除h1等标题标签加粗*/
+    font-weight: 400; 
+}
+#weight2{
+    /* 加粗 font-size = "bold"*/
+    font-weight: 700;
+}
+#style1{
+    /* 不倾斜  消除em标签倾斜*/
+    font-style: normal;
+}
+#style2{
+    /* 倾斜  */
+    font-style: italic;
+}
+#height1{   
+    /*  文字行高 
+        1.直接加数字：若为2，行高则为文字font-size * 2 px;
+        2.直接加像素：XX px
+    */
+    line-height: 2;
+}
+#height2{
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    /* 垂直居中 height = line-height 仅限单行文字*/
+    line-height: 100px;
+}
+#family{
+    font-family: 楷体;
+}
+#font{
+    /* font属性：是否倾斜 是否加粗 字号/行高 字体族 */
+    font: italic 700 30px/2 楷体;
+}
+#indent{
+    /*  文本缩进
+        1.数字加px
+        2.数字加em(推荐：1em = 当前标签的字号大小)
+    */
+    text-indent: 2em;
+}
+#align{                             
+    /* 文本对齐方式：left,center,right*/
+    background-color: skyblue;
+    text-align: center;
+}
+#decoration1{
+    /* 下划线 */
+    text-decoration: underline;
+}
+#decoration2{
+    /* 删除线 */
+    text-decoration: line-through;
+}
+#decoration3{
+    /* 上划线 */
+    text-decoration: overline;
+}
+
+
+    
+    

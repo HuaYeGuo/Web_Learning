@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<!-- action 属性规定当提交表单时，向何处发送表单数据。
+		 在 HTML5 中，action 属性不再是必需的。-->
+		<!-- medhod属性,用于定义表单数据的提交方式
+		 post：指的是 HTTP POST 方法，表单数据会包含在表单体内然后发送给服务器，用于提交敏感数据，如用户名与密码等。
+		 get：默认值，指的是 HTTP GET 方法，表单数据会附加在 action 属性的 URL 中，
+		 并以 ?作为分隔符，一般用于不敏感信息，如分页等。
+		 例如：https://www.runoob.com/?page=1，这里的 page=1 就是 get 方法提交的数据。-->
+		<form action="URL" method="post|get">			
+		</form>
+		<!-- 文本域 -->
+		<!-- 表单本身并不可见。同时，在大多数浏览器中，文本域的默认宽度是 20 个字符。 -->
+		<form>
+			First Name: <input type="text" name="firstname"> <br>
+			Last Name: <input type="text" name="lastname"> <br>
+		</form>
+		<!-- 密码字段 -->
+		<form>
+			<label for="pwd">password:</label>
+			<input type="password" name="pwd">
+		</form>
+		<!-- 单选按钮 -->
+		<form>
+			<input type="radio" name="sex" value="male">男 <br>
+			<input type="radio" name="sex" value="female">女 <br>
+		</form>
+		<!-- 复选框 -->
+		<form>
+			<input type="checkbox" name="habbits" value="basketball">篮球 <br>
+			<input type="checkbox" name="habbits" value="football">足球 <br>
+		</form>
+		<!-- 提交按钮 -->
+		<form action="表单.html" method="get">
+			<label for="username">用户名:</label>
+			<input type="text" name="username">
+			<input type="submit" value="submit"><br>
+		<!-- 下拉选项 -->
+		<label for="country">国家:</label> <br>
+		<select name="country" id="country">
+			<option value="CN">CN</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+		</select>
+		<input type="submit" value="submit"/><br>
+		<!-- <optgroup> 标签经常用于把相关的选项组合在一起。 -->
+		<label for="drinks">饮料:</label><br>
+		<select name="drinks" id="drinks">
+			<optgroup label="茶类">
+				<option value="teaPI">茶π</option>
+				<option value="moliqin">茉莉清茶</option>
+			</optgroup>
+			<optgroup label="奶类">
+				<option value="milk">纯牛奶</option>
+				<option value="teamilk">乳茶</option>
+			</optgroup>			
+		</select><br>
+		<input type="submit" value="submit"/>
+		</form>
+		<!-- 对表单中的相关元素进行分组： -->
+		<form>
+			<!-- <fieldset> 标签可以将表单内的相关元素分组。 -->
+			<!-- <fieldset> 标签会在相关表单元素周围绘制边框。 -->
+			<fieldset>
+				<!-- <legend> 标签为 <fieldset> 元素定义标题。 -->
+				<legend>Personalia:</legend>
+				Name: <input type="text"><br>
+				E-mail: <input type="text"><br>
+				Date of birth <input type="text" />
+			</fieldset>			
+		</form>
+		<!-- 文本区域 -->
+		<!-- rows属性规定可见行数 -->
+		<!-- cols规定文本区域内可见的宽度-->
+		<!-- autofocus自动调整焦点 -->
+		<!-- maxlength属性规定文本区域的最大长度（以字符计） -->
+		<label for="text">输入你想说的话:</label> <br>
+		<textarea name="test" id="test" rows="10" cols="30" maxlength="50" >
+		</textarea> <br>
+		<input type="submit" value="submit"/> <br>
+		<!-- disabled 属性规定文本区域应该被禁用。 -->
+		<label for="text2">不可输入文本区域</label> <br>
+		<textarea name="disabled" id="disabled" cols="30" rows="10" disabled>不可输入区域
+		</textarea><br>
+		<!-- placeholder 属性规定一个简短的提示，它描述了文本区域的期望值。
+			当文本区域为空，且当字段获得焦点后又失去焦点时，文本区域中显示该提示。 -->
+		<textarea placeholder="描述信息..."cols="30" rows="10"></textarea> <br>
+		<!-- readonly属性设置只读文本 -->
+		<textarea rows="10" cols="30" readonly>这是一段只读文本
+		</textarea>	<br>
+		<!-- required属性规定一个文本区域是必需的/必须填写（以提交表单） -->
+		<textarea name="comment" id="comment" cols="30" rows="10" placeholder="必填文本..." required></textarea><br>
+		<input type="submit" value="submit"/><br />
+		<!-- button标签 -->
+		<!-- button(autofocus) 属性-->
+		<button type="button" autofocus onclick="alert('Hello World!')">Hello World!</button><br />
+		<!-- button(disabled) 属性 -->
+		<!-- 如果使用该属性，则会禁用按钮。 -->
+		<button type="button" disabled>点我。。</button>
+		<!-- button(formtarget) -->
+		<button type="submit" formtarget="_blank">提交到一个新窗口或选项卡</button><br>
+		<!-- datalist标签 -->
+		<!-- <datalist> 标签被用来在为 <input> 元素提供"自动完成"的特性。
+		用户能看到一个下拉列表，里边的选项是预先定义好的，将作为用户的输入数据。 -->
+		<input list="browsers">
+		<datalist id="browsers">
+		  <option value="Internet Explorer">
+		  <option value="Firefox">
+		  <option value="Chrome">
+		  <option value="Opera">
+		  <option value="Safari">
+		</datalist>
+		
+	</body>
+</html>

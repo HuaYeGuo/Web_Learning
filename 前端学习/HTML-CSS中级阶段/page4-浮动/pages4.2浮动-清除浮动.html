@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 场景：浮动元素会脱标，如果父级没有高度，子级无法撑开父级高度(可能导致页面布局错乱) -->
+    <!-- 解决办法：清除浮标(清除浮动带来的影响)
+        1.额外标签法——在父元素内容的最后添加一个块级元素，设置CSS属性clear:both
+        2. -->
+    <style>
+        .top{
+            margin: 10px auto;
+            width: 1200px;
+            /* height: 300px; */
+            background-color: pink;
+        }
+        .left{
+            float: left;
+            width: 200px;
+            height: 300px;
+            background-color: skyblue;
+        }
+        .right{
+            float: right;
+            width: 950px;
+            height: 300px;
+            background-color: orange;
+        }
+        .bottom{
+            height: 100px;
+            background-color: brown;
+        }
+        /* 双尾元素法(常用形式) */
+        /* before 解决外边距塌陷问题 */
+        .clearfix::before,
+        .clearfix::after{
+            content: "";
+            display: table;
+        }
+        .clearfix::after{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="top clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

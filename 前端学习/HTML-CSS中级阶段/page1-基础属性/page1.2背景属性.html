@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景属性</title>
+</head>
+<style>
+    div{
+        width: 400px;
+        height: 400px;
+        background-color: pink;
+        background-image: url(page1.2bk.png);
+        /* 不平铺no-repeat */
+        background-repeat: no-repeat;
+        /* 背景图位置 0(水平) 0(垂直) */
+        background-position: center bottom;
+        /* 背景图缩放
+            1.cover:等比例完全覆盖背景图，背景图片部分可能看不见
+            2.contain:完全装入背景区，可能背景区部分空白
+        */
+        background-size: contain;
+        /* 背景图不会跟着元素内容滚动 */
+        background-attachment: fixed;
+    }
+</style>
+<body>
+    <div>testtest</div>
+</body>
+</html>

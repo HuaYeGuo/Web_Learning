@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>复合选择器</title>
+</head>
+<style>
+    /* 后代选择器 */
+    /* div span{
+        font-size: 30px;
+        color: red;
+    } */
+    div > span{
+        font-size: 30px;
+        color: green;
+    }
+</style>
+<body>
+    <div>
+        <span>test</span>
+        <p>
+            <span>test</span>
+        </p>
+    </div>
+</body>
+</html>

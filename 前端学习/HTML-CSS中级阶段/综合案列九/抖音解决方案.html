@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./综合案例九.css">1 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        li{
+            list-style: none;
+        }
+
+        .box{
+            width: 1200px;
+            height: 417px;
+            border: 1px solid #dddddd;
+            margin: 100px auto;
+            border-radius: 5px;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            /* background-color: pink; */
+            padding: 100px 40px 90px 80px;
+            height: 417px;
+            justify-content: space-between;
+            align-content: space-between    ;
+        }
+
+        li{
+            display: flex;
+            /* background-color: skyblue; */
+            width: 500px;
+            height: 90px;
+        }
+
+        .pic{
+            margin-right: 15px;
+        }
+        
+        .title{
+            line-height: 40px;
+            font-size: 18px;
+            color: #333;
+            text-align: left;
+        }
+
+        .small{
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <div class="pic">
+                    <img src="images/1.svg">
+                </div>
+                <div class="text">
+                    <p class="title">一键发布多端</p>
+                    <p class="small">发布视频到抖音短视频、西瓜视频及今日头条</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="images/2.svg">
+                </div>
+                <div class="text">
+                    <p class="title">管理视频内容</p>
+                    <p class="small">支持修改已发布稿件状态和实时查询视频审核状态</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="images/3.svg">
+                </div>
+                <div class="text">
+                    <p class="title">发布携带组件</p>
+                    <p class="small">支持分享内容携带小程序、地理位置信息等组件，扩展内容及突出地域性</p>
+                </div>
+            </li>
+            <li>
+                <div class="pic">
+                    <img src="images/4.svg">
+                </div>
+                <div class="text">
+                    <p class="title">数据评估分析</p>
+                    <p class="small">获取视频在对应产品内的数据表现、获取抖音热点，及时进行表现评估</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html> 
